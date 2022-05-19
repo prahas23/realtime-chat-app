@@ -3,7 +3,7 @@
 #login-page{
     margin: 0;
     padding: 0;
-    background-color: #7a0c0c;
+    background-color: #e0e0e0;
     overflow: hidden;
 }
 
@@ -13,9 +13,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 5);
-    border-radius: 25px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  35px 35px 70px #bebebe,
+                -35px -35px 70px #ffffff;
 }
 
 .login-container h1 {
@@ -78,6 +79,7 @@ form .username {
 
 .field {
     text-align: center;
+    margin-top: 35px;
     font-family: 'Righteous', cursive;
 }
 
@@ -89,65 +91,101 @@ form .username {
 }
 
 .submit-btn {
-    min-width: 200px;
-    min-height: 50px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-weight: 700;
-    color: white;
-    background: #ef2a00;
-    background: linear-gradient(90deg, #ef2a00 0%, #ef2a00 100%);
-    border: none;
-    border-radius: 1000px;
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
     position: relative;
-    padding: 10px;
-    margin: 25px;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #e0e0e0;
+    color: #ef2a00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 35px;
 }
 
-button::before {
-    content: '';
-    border-radius: 1000px;
-    min-width: calc(200px + 12px);
-    min-height: calc(50px + 12px);
-    border: 6px solid #ef2a00;
-    box-shadow: 0 0 60px #ef2a00;
+button:hover {
+    box-shadow: 0 0 10px #ef2a00, 0 0 25px #303030, 0 0 50px #ef2a00;
+    transition-delay: 0.6s;
+}
+
+button span {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
 }
 
-.submit-btn:hover, .submit-btn:focus {
-    color: #313133;
-    transform: translateY(-6px);
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ef2a00);
 }
 
-button:hover::before, button:focus::before {
-    opacity: 1;
+button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
 }
 
-button::after {
-    content: '';
-    width: 30px; height: 30px;
-    border-radius: 100%;
-    border: 6px solid #ef2a00;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #303030);
 }
 
-button:hover::after, button:focus::after {
-animation: none;
-display: none;
+button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ef2a00);
+}
+
+button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #303030);
+}
+
+button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+}
+
+button:active {
+    background: #ef2a00;
+    background: linear-gradient(to top right, #ef2a00, #303030);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ef2a00, 0 0 8px #303030, 0 0 8px #ef2a00;
+    transition: 0.1s;
+}
+
+button:active span:nth-child(1) 
+    span:nth-child(2) 
+    span:nth-child(2) 
+    span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
 }
 
 /* Chat Page */
