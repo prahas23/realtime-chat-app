@@ -82,16 +82,26 @@ input, select, textarea {
 }
 
 .field {
-    text-align: center;
+    display: block;
     margin-top: 35px;
-    color: #adadad;
-    font-family: 'Righteous', cursive;
-    transition: 0.2s;
 }
 
-.field:hover {
-    color: #ef2a00;
-    transition-delay: 0.1s;
+.field span {
+    position: relative;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    color: #adadad;
+    left: 5px;
+    transition: 0.1s;
+}
+
+.field select {
+    margin-top: 5px;
+    padding: 5px;
+    color: #adadad;
+    width: 100%;
+    border: 3px solid #ef2a00;
+    background: #212121;
 }
 
 .button {
