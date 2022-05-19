@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-body {
+#login-page{
     margin: 0;
     padding: 0;
     background-color: #7a0c0c;
@@ -148,4 +148,26 @@ button::after {
 button:hover::after, button:focus::after {
 animation: none;
 display: none;
+}
+
+/* Chat Page */
+
+.chat-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 600px;
+    background: rgb(47, 15, 15);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 5);
+    border-radius: 25px;
+}
+
+.chat-container h1 {
+    position: absolute;
+    top: 16rem;
+    left: 12rem;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
 }
