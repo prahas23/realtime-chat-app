@@ -33,7 +33,7 @@
     box-sizing: border-box;
 }
 
-form .username {
+.username {
     position: relative;
     border-bottom: 2px solid #adadad;
     font-family: 'Righteous', cursive;
