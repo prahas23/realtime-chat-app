@@ -47,7 +47,7 @@
                 </div>
                 <div class="button">
                     <audio id="saber" preload="auto">
-                        <source src="/src/audio/saber.mp3">
+                        <source src="./src/audio/saber.mp3">
                     </audio>
                     <!-- <audio id="saber1" preload="auto">
                         <source src="/src/audio/saber1.mp3">
