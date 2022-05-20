@@ -28,13 +28,13 @@
                     </select>
                 </div>
                 <div class="button">
-                    <!-- <audio id="saber" preload="auto">
-                        <source src="src/audio/saber.mp3">
-                    </audio> -->
+                    <audio id="saber" preload="auto">
+                        <source src="audio/saber.mp3">
+                    </audio>
                     <!-- <audio id="saber1" preload="auto">
                         <source src="/src/audio/saber1.mp3">
                     </audio> -->
-                    <button type="submit" class="submit-btn">
+                    <button type="submit" class="submit-btn" onmouseover="playSound()" onmouseleave="stopSound()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -45,7 +45,7 @@
         </main>
     </section>
 
-    <!-- <script>
+    <script>
         function redirect() {
             let select = document.getElementById('selectOptions').value;
             
@@ -68,6 +68,7 @@
             audio.pause();
             audio.currentTime = 0;
         }
-    </script> -->
+    </script>
+
 </body>
 </html>
