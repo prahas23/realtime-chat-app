@@ -1,1 +1,0 @@
-<p>Study chat</p>
