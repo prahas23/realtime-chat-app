@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/src/style.css">
+
 <script>
     function redirect() {
         let select = document.getElementById('selectOptions').value;
