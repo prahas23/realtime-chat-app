@@ -11,6 +11,16 @@
         }
     }
 
+    function playSound() {
+        let audio = document.getElementById('saber');
+        audio.play();
+    }
+
+    function stopSound() {
+        let audio = document.getElementById('saber');
+        audio.pause();
+        audio.currentTime = 0;
+    }
 </script>
 
 <title>PrayneChat</title>
@@ -36,7 +46,13 @@
                     </select>
                 </div>
                 <div class="button">
-                    <button type="submit" class="submit-btn">
+                    <audio id="saber" preload="auto">
+                        <source src="/src/audio/saber.mp3">
+                    </audio>
+                    <!-- <audio id="saber1" preload="auto">
+                        <source src="/src/audio/saber1.mp3">
+                    </audio> -->
+                    <button type="submit" class="submit-btn" on:mouseover={playSound} on:mouseleave={stopSound} on:focus="{playSound}">
                         <span></span>
                         <span></span>
                         <span></span>
