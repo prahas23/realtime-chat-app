@@ -229,7 +229,7 @@ button:active span:nth-child(1)
 .chill-container h1 {
     position: relative;
     top: 10rem;
-    left: 11rem;
+    left: 10.5rem;
     font-family: 'Righteous', cursive;
     color: #ef2a00;
 }
@@ -237,7 +237,7 @@ button:active span:nth-child(1)
 .chill-container h3 {
     position: relative;
     top: 10rem;
-    left: 12rem;
+    left: 11.5rem;
     font-family: 'Righteous', cursive;
     color: #ef2a00;
 }
