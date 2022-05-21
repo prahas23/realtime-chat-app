@@ -13,7 +13,7 @@
         <h1>PrayneChat</h1>
         </header>
         <main class="login-info">
-            <form action="chat.html">
+            <form id="login-form" onsubmit="redirect()">
                 <div class="username">
                     <input type="text" name="username" id="username" required />
                     <span></span>
@@ -46,17 +46,19 @@
     </section>
 
     <script>
-        function redirect() {
+
+        document.getElementById('login-form').addEventListener('submit', function redirect(e) {
+            e.preventDefault();
             let select = document.getElementById('selectOptions').value;
             
             if (select === "Chill") {
-                window.location.href = "chill";
+                window.location.href = "chatroom/chill.html";
             }
     
             else if (select === "Study") {
-                window.location.href = "study";
+                window.location.href = "chatroom/study.html";
             }
-        }
+        })
     
         function playSound() {
             let audio = document.getElementById('saber');

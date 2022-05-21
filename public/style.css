@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-#login-page{
+body{
     margin: 0;
     padding: 0;
     background-color: #212121;
@@ -209,4 +209,35 @@ button:active span:nth-child(1)
     span:nth-child(2) {
     transition: none;
     transition-delay: none;
+}
+
+/* Chill chat */
+
+.chill-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+}
+
+.chill-container h1 {
+    position: relative;
+    top: 10rem;
+    left: 11rem;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
+}
+
+.chill-container h3 {
+    position: relative;
+    top: 10rem;
+    left: 12rem;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
 }
