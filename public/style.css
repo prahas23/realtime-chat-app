@@ -246,3 +246,39 @@ button:active span:nth-child(1)
     font-family: 'Righteous', cursive;
     color: #ef2a00;
 }
+
+/* Study Room */
+
+.study-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+}
+
+.study-container:hover {
+    border: 4px solid #ef2a00;
+    transition: 0.5s;
+}
+
+.study-container h1 {
+    position: relative;
+    top: 10rem;
+    left: 9.7rem;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
+}
+
+.study-container h3 {
+    position: relative;
+    top: 10rem;
+    left: 11.5rem;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
+}
