@@ -218,12 +218,17 @@ button:active span:nth-child(1)
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
     border-radius: 30px;
     background: #212121;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
                 -15px -15px 30px rgb(60, 60, 60);
+}
+
+.chill-container:hover {
+    border: 4px solid #ef2a00;
+    transition: 0.5s;
 }
 
 .chill-container h1 {
@@ -255,6 +260,11 @@ button:active span:nth-child(1)
     background: #212121;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
                 -15px -15px 30px rgb(60, 60, 60);
+}
+
+.study-container:hover {
+    border: 4px solid #ef2a00;
+    transition: 0.5s;
 }
 
 .study-container h1 {
