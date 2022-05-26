@@ -35,12 +35,20 @@ body{
     width: fit-content;
 }
 
+.chill-sidebar h2 {
+    position: relative;
+    top: 2rem;
+    left: 5.5rem;
+    color: #adadad;
+    font-family: 'Righteous', cursive;
+}
+
 .chill-messages {
     position: relative;
     height: 499.68px;
     width: 750px;
     border-radius: 0 25px 0 0;
-    top: -7.39rem;
+    top: -7.51rem;
     left: 15.37rem;
     background: #313030;
     border-left: 4px solid #ef2a00;
@@ -50,7 +58,7 @@ body{
 .chill-form-container {
     position: relative;
     height: 79.1px;
-    top: -8rem;
+    top: -8.2rem;
     left: 15.35rem;
     border-left: 4px solid #ef2a00;
     padding-top: 2.2rem;
@@ -121,7 +129,7 @@ input:focus ~ .input-border {
     overflow: hidden;
     transition: all 0.2s;
     position: relative;
-    top: -3.2rem;
+    top: -3.1rem;
     left: 38.2rem;
     transform: scale(0.95);
     cursor: pointer;
