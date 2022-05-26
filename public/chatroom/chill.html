@@ -17,12 +17,15 @@
                <i class="users-list"></i><h2> Users</h2>
                <ul id="users"></ul>
            </div>
-           <div class="chill-messages"></div>
+           <div class="chill-messages">
+               <div class="message">
+               </div>
+           </div>
        </main>
-       <div class="chill-form">
-           <form>
+       <div class="chill-form-container">
+           <form id="chill-form">
                <div class="form">
-                   <input class="input" type="text" placeholder="Message" required autocomplete="off" />
+                   <input id="msg" class="input" type="text" placeholder="Message" required autocomplete="off" />
                    <span class="input-border"></span>
                 </div>
                <button class="send-btn">
@@ -41,6 +44,6 @@
     </section>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="main.js"></script>
+    <script src="chat.js"></script>
 </body>
 </html>

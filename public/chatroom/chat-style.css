@@ -4,7 +4,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: #212121;
-    overflow: hidden;
 }
 
 /* Chill Room */
@@ -19,8 +18,6 @@ body{
     border-radius: 30px;
     border: 4px solid #ef2a00;
     background: #212121;
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-                -15px -15px 30px rgb(60, 60, 60);
 }
 
 .chill-container h1 {
@@ -47,9 +44,10 @@ body{
     left: 15.37rem;
     background: #313030;
     border-left: 4px solid #ef2a00;
+    overflow-y: scroll;
 }
 
-.chill-form {
+.chill-form-container {
     position: relative;
     height: 79.1px;
     top: -8rem;
@@ -110,8 +108,8 @@ input:focus ~ .input-border {
 }
 
 .send-btn {
-    font-family: inherit;
-    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 17px;
     background: #ef2a00;
     color: white;
     padding: 0.7em 1em;
@@ -126,6 +124,7 @@ input:focus ~ .input-border {
     top: -3.2rem;
     left: 38.2rem;
     transform: scale(0.95);
+    cursor: pointer;
     
 }
 
