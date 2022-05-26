@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="chat-style.css" />
     <title>PrayneChat | Chill Room</title>
 </head>
 <body>
-    <div class="chill-container">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <h1>Chill Room</h1>
-        <h3>Coming Soon...</h3>
-    </div>
+    <section class="chill-container">
+       <header>
+           <h1>PrayneChat</h1>
+       </header>
+       <main class="chill-info">
+           <div class="chill-sidebar">
+               <i class="users-list"></i><h2> Users</h2>
+               <ul id="users"></ul>
+           </div>
+           <div class="chill-messages">
+               <div class="message">
+               </div>
+           </div>
+       </main>
+       <div class="chill-form-container">
+           <form id="chill-form">
+               <div class="form">
+                   <input id="msg" class="input" type="text" placeholder="Message" required autocomplete="off" />
+                   <span class="input-border"></span>
+                </div>
+               <button class="send-btn">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Send</span>
+                </button>
+           </form>
+       </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
 </body>
 </html>

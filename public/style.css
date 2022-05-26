@@ -210,6 +210,7 @@ button:active span:nth-child(1)
     transition: none;
     transition-delay: none;
 }
+<<<<<<< HEAD
 
 /* Chill chat */
 
@@ -282,3 +283,5 @@ button:active span:nth-child(1)
     font-family: 'Righteous', cursive;
     color: #ef2a00;
 }
+=======
+>>>>>>> chatroom-test

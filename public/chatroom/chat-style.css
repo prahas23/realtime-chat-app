@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+}
+
+/* Chill Room */
+
+.chill-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    border-radius: 30px;
+    border: 4px solid #ef2a00;
+    background: #212121;
+}
+
+.chill-container h1 {
+    position: relative;
+    top: 1rem;
+    left: 3.4rem;
+    display: flex;
+    width: fit-content;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
+}
+
+.chill-sidebar {
+    position: relative;
+    width: fit-content;
+}
+
+.chill-messages {
+    position: relative;
+    height: 499.68px;
+    width: 750px;
+    border-radius: 0 25px 0 0;
+    top: -7.39rem;
+    left: 15.37rem;
+    background: #313030;
+    border-left: 4px solid #ef2a00;
+    overflow-y: scroll;
+}
+
+.chill-form-container {
+    position: relative;
+    height: 79.1px;
+    top: -8rem;
+    left: 15.35rem;
+    border-left: 4px solid #ef2a00;
+    padding-top: 2.2rem;
+    padding-left: 1rem;
+    width: fit-content;
+}
+
+.form {
+    --width-of-input: 600px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #ef2a00;
+    background: #de5b5b1f;
+    position: relative;
+    
+    width: var(--width-of-input);
+    height: 50px;
+    border-radius: 8px;
+}
+ /* styling of Input */
+.input {
+    color: white;
+    font-size: 1rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 1.5em;
+    padding-block: 0.9em;
+    border: none;
+    /* border-bottom: var(--border-height) solid var(--border-before-color); */
+}
+
+/* styling of animated border */
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+/* Hover on Input */
+input:hover ~ .input-border {
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+/* here is code of animated border */
+input:focus ~ .input-border {
+    width: 100%;
+}
+
+.send-btn {
+    font-family: 'Righteous', cursive;
+    font-size: 17px;
+    background: #ef2a00;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s;
+    position: relative;
+    top: -3.2rem;
+    left: 38.2rem;
+    transform: scale(0.95);
+    cursor: pointer;
+    
+}
+
+.send-btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.send-btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.send-btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send-btn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.send-btn:hover span {
+    transform: translateX(5em);
+}
+
+.send-btn:active {
+    transform: scale(0.95);
+}
+   
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}   
+
+/* Study Room */
+
+.study-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+}
+
+.study-container:hover {
+    border: 4px solid #ef2a00;
+    transition: 0.5s;
+}
+
+.study-container h1 {
+    position: relative;
+    top: 10rem;
+    left: 9.7rem;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
+}
+
+.study-container h3 {
+    position: relative;
+    top: 10rem;
+    left: 11.5rem;
+    font-family: 'Righteous', cursive;
+    color: #ef2a00;
+}
