@@ -55,6 +55,10 @@ body{
     overflow-y: scroll;
 }
 
+.message {
+    color: #adadad;
+}
+
 .chill-form-container {
     position: relative;
     height: 79.1px;
